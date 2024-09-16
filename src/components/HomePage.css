@@ -1,0 +1,89 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* src/components/HomePage.css */
+.home-container {
+  position: relative; /* Changed from absolute to relative */
+  width: 100vw;
+  height: 100vh;
+  background: url('../assets/galaxy1.webp') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; /* Changed to column direction */
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-message {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem; /* Adjust as needed */
+  font-weight: bold;
+  margin-bottom: 20px; /* Space between the welcome message and the content */
+  text-align: center;
+  z-index: 1; /* Ensure it is above the background */
+}
+
+.home-content {
+  text-align: center;
+  color: white;
+  z-index: 1; /* Ensure content is above the background */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background to make text more readable */
+  border-radius: 10px;
+  width: 1000px;
+}
+
+.quiz-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quiz-card {
+  margin: 10px;
+  height: 200px;
+  color: black;
+  padding: 20px; /* Increased padding for better spacing */
+  width: 300px;
+  background-color: #f5f5f57f; /* Light grey background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better appearance */
+  transition: transform 0.3s;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.quiz-card .card-title {
+  margin: 10px 0; /* Margin for spacing around the title */
+  font-family: 'Roboto', sans-serif; /* Modern font style */
+  font-size: 2rem; /* Increased font size for the title */
+  font-weight: bold; /* Make title bold */
+}
+
+.quiz-card .card-text {
+  font-family: 'Roboto', sans-serif; /* Modern font style */
+  font-size: 1.25rem; /* Increased font size for the text */
+}
+
+.quiz-card:hover {
+  transform: scale(1.05);
+}
+
+.start-button {
+  background-color: #dc3545; /* Red color for the button */
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: 'Roboto', sans-serif; /* Modern font style */
+}
+
+.start-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}

@@ -1,0 +1,112 @@
+/* src/components/QuizPage.css */
+.quiz-page {
+  text-align: center;
+  color: white;
+  background: url('../assets/galaxy1.webp') no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px;
+  height: 100vh; /* Full page height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem; /* Large font size for the timer */
+  font-weight: bold;
+  color: yellow; /* Bright color for visibility */
+}
+
+.quiz-content {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  margin-top: 40px; /* Add margin to push content down */
+}
+
+.question-container {
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option-button {
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.correct {
+  background-color: green;
+  color: white;
+}
+
+.incorrect {
+  background-color: red;
+  color: white;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.next-button {
+  background-color: #dc3545; /* Red color for the Next button */
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.quiz-completed-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-completed-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.crown-image {
+  width: 50px; /* Set the size of the crown image */
+  height: auto;
+}
+
+.score-text, .time-taken-text {
+  font-size: 2rem;
+  font-weight: bold;
+} 
